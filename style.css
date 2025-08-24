@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url("pngtree-tribal-image-background-picture-image_15434922.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  height: 10rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Glass Navbar - UNSTUCK */
+.navbar {
+  padding: 15px 30px;
+  margin: 20px auto;
+  width: 85%;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Navbar links */
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background: #ffcc00;
+  transition: width 0.3s;
+  border-radius: 2px;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Main section */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bg {
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  margin-top: 20px;
+}
+
+/* Cards Grid */
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  height: 420px;
+  width: 360px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Card Image */
+.imgg {
+  flex: 2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Buybox */
+.buybox {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 0 0 15px 15px;
+}
+
+.buybox h3 {
+  color: #2e7d32;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.buybox p {
+  margin: 0;
+  font-weight: bold;
+  color: #d32f2f;
+  font-size: 1.2rem;
+}
+
+.buybox button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Kalam", cursive;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.buybox button:hover {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.buybox button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+}
